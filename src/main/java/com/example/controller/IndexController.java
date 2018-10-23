@@ -15,4 +15,8 @@ public class IndexController {
     public String getIndexPage() {
         return "index";
     }
+    @RequestMapping(path="/hello", method = RequestMethod.GET)
+    public String getHelloPage() {
+        return "hello";
+    }
 }

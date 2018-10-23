@@ -9,6 +9,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="page-header">
+                                ${blog}
                                 <h3>Whatever you want
                                     <small>Posted on July 26th</small>
                                 </h3>

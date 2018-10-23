@@ -15,6 +15,7 @@
 		<slf4j-api.version>1.7.25</slf4j-api.version>
 		<easyrule.version>3.2.0</easyrule.version>
 		<tiles.version>3.0.5</tiles.version>
+		<jackson.version>2.6.7</jackson.version>
 		<!-- plugins properties -->
 		<jetty-maven-plugin.version>9.4.8.v20171121</jetty-maven-plugin.version>
 		<maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
@@ -144,6 +145,27 @@
 			<artifactId>tiles-extras</artifactId>
 			<version>${tiles.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>titlesDemo</finalName>
