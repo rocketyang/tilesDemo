@@ -20,6 +20,8 @@
 					<value>/WEB-INF/tiles/tiles-definitions.xml</value>
 				</list>
 			</property>
+			<property name="useMutableTilesContainer" value="true"/>
+			<property name="definitionsFactoryClass" value="com.example.tiles.FloorDefinitionFactory"/>
 		</bean>
 	</beans>
 </beans>
