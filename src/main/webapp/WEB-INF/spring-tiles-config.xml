@@ -14,14 +14,19 @@
 			<property name="order" value="0" />
 		</bean>
 		<bean id="tilesConfigurer"
-			class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+			class="com.example.tiles.CustomTilesConfigurer">
 			<property name="definitions">
 				<list>
 					<value>/WEB-INF/tiles/tiles-definitions.xml</value>
 				</list>
 			</property>
 			<property name="useMutableTilesContainer" value="true"/>
-			<property name="definitionsFactoryClass" value="com.example.tiles.FloorDefinitionFactory"/>
+			<property name="definitionsFactoryClass" value="com.example.tiles.CustomDefinitionFactory"/>
+			<property name="definitionLoaders">
+				<list>
+					<bean id="floorDefinitionLoader" class="com.example.loaders.FloorDefinitionLoader"/>
+				</list>
+			</property>
 		</bean>
 	</beans>
 </beans>
